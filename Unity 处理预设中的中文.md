@@ -1,13 +1,13 @@
-#Unity 处理预设中的中文
+# Unity 处理预设中的中文
 
-##需求由来
+## 需求由来
 - 项目接入越南版本
 
-##需要解决的文本问题
+## 需要解决的文本问题
 - 获取UI预设Label里面的中文(没被代码控制)提供给越南
 - Label里面的中文替换成越南文
 
-##解决流程
+## 解决流程
 
 * 迭代获取Assets目录下所有文件
 * 获取所有的.prefab预设文件
@@ -22,7 +22,7 @@
 
 
 
-##实现代码
+## 实现代码
 - 获取UI预设Label里面的中文
 ```C#
 [MenuItem("检查预设中文并且生成文本")]
@@ -152,7 +152,7 @@
     }
 ```
 
-##相关代码接口
+## 相关代码接口
 - 迭代获取目录下所有文件路径
 ```C#
 public static void IterationGetFilesPath(string directory, List<string> outPaths)

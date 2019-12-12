@@ -1,10 +1,10 @@
-#Unity C# .Net List 优化点
+# Unity C# .Net List 优化点
 - 已知长度 则初始化指定长度
 - 调用多次Remove会导致内存浪费 调用TrimExcess释放多余内存
 
 
 
-#List代码实现原理
+# List代码实现原理
 - 使用数组保存泛型数据
 
 
