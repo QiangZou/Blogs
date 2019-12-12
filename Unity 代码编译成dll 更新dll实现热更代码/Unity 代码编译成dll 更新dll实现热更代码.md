@@ -1,6 +1,6 @@
-#Unity 代码编译成dll 更新dll实现热更代码
+# Unity 代码编译成dll 更新dll实现热更代码
 
-##实现流程
+## 实现流程
 
 
 * 代码编译成DLL
@@ -13,7 +13,7 @@
 
 
 
-##C#代码编译成DLL
+## C#代码编译成DLL
 
 * 使用VS创建类库项目
   * 模版->Visual C#-> .NET Framework 3.5-> 类库
@@ -61,7 +61,7 @@ namespace A
   * 在项目的bin\Debug目录获得DLL
 
 
-##DLL打包成AssetBundle
+## DLL打包成AssetBundle
 * 把生成的DLL后缀修改为bytes（unity不支持dll后缀打包为AssetBundle）（下图1）
 * 放入项目中 设置AssetBundleName（下图2）
 * 打包代码（放入Editor文件夹）（下图3）
@@ -90,7 +90,7 @@ public class BuildAssetBunble
 
 ![](https://i.imgur.com/zeCz8of.png)
 
-##测试代码
+## 测试代码
 * 创建一个Text游戏对象
 * 新建一个Test代码挂在到Text游戏对象上
 
