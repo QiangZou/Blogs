@@ -13,15 +13,15 @@
 ## 如果扫描项目中所有文件
 
 - 技术点
-  - 获取Unity Asset 中所有文件命名
+  - 如何获取Unity Asset 中所有文件命名
     - Application.dataPath API可获取本地Asset目录
     - DirectoryInfo 目录信息类 可获取该目录下所有目录DirectoryInfo、文件FileSystemInfo
     - 使用迭代方式获取Asset目录所有文件
-  - 判断命名是否规范
+  - 如何判断命名是否规范
     - 规范定义
       - 只包含小写字母和大写字母
       - 是否包含空格看项目情况
-    - 遍历字符串每个char是否符合规范
+    - 遍历文件命名字符串每个char是否符合规范
 
 ## 使用方式
 
