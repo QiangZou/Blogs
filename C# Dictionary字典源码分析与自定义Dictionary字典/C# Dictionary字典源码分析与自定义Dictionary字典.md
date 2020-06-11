@@ -6,7 +6,7 @@
 
 ## 关键点
 
-- Dictionary实际容器为Entry[] entries;结构体数组
+- Dictionary实际容器为Entry[] entries 结构体数组
 
  ```c#
 private struct Entry
@@ -18,32 +18,18 @@ private struct Entry
 }
  ```
 
-- Dictionary实际容器默认长度为3
-
-- Dictionary实际容器长度为质数
-
+- entries数组默认长度为3
+- 如果初始化指定长度 entries数组长度为大于指定长度最接近的质数
 - Dictionary查找元素的时间复杂度接近`O(1)`是因为
-
   - 定义了一个int[] buckets Hash桶数组
   - 获取key了hashCode 
   - 用hashCode除buckets长度取余做为索引（这也是为什么长度为质数的原因）
-
 - 防止hashCode冲突Dictionary使用了拉链法
-
   - 使用Entry.next保存冲突项索
-
 - 当添加值时冲突达到100次会使用新的hashCode方法解决
-
 - 当Entry[] entries或int[] buckets满了的时候会自动扩了当前容量的2倍
-
 - 扩容后会重现计算hashcode赋值索引
-
 - 查找元素是会判断hashcode和key.Equals
-
-  - 所以字典的key最好用简单类型
-  - 如果一定要用引用类型初始化字典的时候赋值对比函数较少反射
-
-  
 
 ## 优化点
 
