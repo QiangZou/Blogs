@@ -25,7 +25,7 @@ private struct Entry
   - 获取key了hashCode 
   - 用hashCode除buckets长度取余做为索引（这也是为什么长度为质数的原因）
 - 防止hashCode冲突Dictionary使用了拉链法
-  - 使用Entry.next保存冲突项索
+  - 使用Entry.next保存冲突项index
 - 当添加值时冲突达到100次会使用新的hashCode方法解决
 - 当Entry[] entries或int[] buckets满了的时候会自动扩了当前容量的2倍
 - 扩容后会重现计算hashcode赋值索引
