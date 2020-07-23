@@ -72,6 +72,11 @@ public class ThreadExample2 : MonoBehaviour
 }
 ```
 
+## 终止线程
+
+- Thread.Abort()
+- 非常危险的操作， 任何时刻发生并可能彻底摧毁应用程序。另外,使用该技术也不一定总能终止线程
+
 ## 线程状态
 
 ```c#
@@ -150,4 +155,38 @@ public class ThreadExample4 : MonoBehaviour
     }
 }
 ```
+
+## 线程优先级
+
+- Thread.Priority
+- 通常优先级更高的线程将获取到更多cpu时间
+
+## 线程前台 后台
+
+- Thread.IsBackground
+- **进程会等待所有的前台线程完成后再结束工作,但是如果只剩下后台线程,则会直接结束工作**
+
+## 线程锁
+
+- 多个线程访问一个资源 容易出错
+- 使用lock 其他线程会处于柱塞状态 等待对象解锁
+
+## 死锁
+
+- A线程Lock a资源
+- B线程Lock b资源
+- A线程想访问a资源
+- B线程想访问b资源
+- 相互柱塞
+- 可以使用超时机制避免死锁Monitor
+
+## 线程同步
+
+- 尽量不使用共享对象 避免线程同步
+- 内核模式 将等待的线程置于柱塞状态 减少等待线程占用CPU时间
+- 用户模式 将等待线程等待一段时间  减少上下文切换消耗的CPU时间　适合轻量　速度快逻辑
+- 混合模式　先尝试用户模式　然后切换到组赛状态
+- AutoResetEvent
+- WaitOne 
+- SemaphoreSlim信号量
 
