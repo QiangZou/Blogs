@@ -10,8 +10,11 @@
 4. 输入项目名（dll名字）
 5. 下一步
 6. 勾选dll->勾选空项目
-![1](https://i.imgur.com/s0PBO18.png)
-![](https://i.imgur.com/VUyGxU5.png)
+
+![](https://github.com/QiangZou/Blogs/blob/master/Images/1.png?raw=true)
+
+
+![](https://github.com/QiangZou/Blogs/blob/master/Images/2.png?raw=true)
 
 
 测试代码test.c
@@ -44,10 +47,10 @@ EXPORT_DLL  int add(int a, int b);
 
 test.c放入源文件
 test.h放入头文件
-![](https://i.imgur.com/DjXSmCW.png)
+![](https://github.com/QiangZou/Blogs/blob/master/Images/3.png?raw=true)
 
 选着X64框架
-![](https://i.imgur.com/tcXWjKr.png)
+![](https://github.com/QiangZou/Blogs/blob/master/Images/4.png?raw=true)
 
 - 点击生成解决方案
 
@@ -112,11 +115,12 @@ APP_ABI := armeabi-v7a x86
 ```C
 ndk-build NDK_PROJECT_PATH=. NDK_APPLICATION_MK=Application.mk
 ```
-![](https://i.imgur.com/qx6rsRb.png)
+![](https://github.com/QiangZou/Blogs/blob/master/Images/5.png?raw=true)
 
 - 复制生成的libs文件到Unity的Plugins/Andriod路径
 - 在Unity中选中SO文件修改属性
-![](https://i.imgur.com/tSRlUWn.png)
+
+![](https://github.com/QiangZou/Blogs/blob/master/Images/6.png?raw=true)
 
 ## 打包.a库 ##
 工具xcode

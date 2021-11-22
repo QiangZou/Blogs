@@ -2,7 +2,7 @@
 
 ## 效果图
 
-![](https://github.com/QiangZou/Blogs/blob/master/Unity%20%E6%9F%A5%E7%9C%8BUnity%E6%89%80%E6%9C%89%E7%9A%84%E9%BB%98%E8%AE%A4UI%E6%95%88%E6%9E%9C%20GUIStyle/TIM%E6%88%AA%E5%9B%BE20200515143703.png?raw=true)
+![](https://github.com/QiangZou/Blogs/blob/master/Images/TIM%E6%88%AA%E5%9B%BE20200515143703.png?raw=true)
 
 ## 需求由来
 

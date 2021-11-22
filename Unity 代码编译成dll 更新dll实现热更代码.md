@@ -18,16 +18,16 @@
 * 使用VS创建类库项目
   * 模版->Visual C#-> .NET Framework 3.5-> 类库
   * 名称即为DLL名字（反射的时候要用）
-![模版->Visual C#-> .NET Framework 3.5-> 类库](https://i.imgur.com/m7lShQz.png)
+  ![模版->Visual C#-> .NET Framework 3.5-> 类库](https://github.com/QiangZou/Blogs/blob/master/Images/TIM%E6%88%AA%E5%9B%BE20181201180434.png?raw=true)
 
 
 * 引用两个Unity相关DLL（防止编译报错）   
   * 右键项目->添加->引用
-![右键项目->添加->引用](https://i.imgur.com/U6HgYV7.png)
+  ![右键项目->添加->引用](https://github.com/QiangZou/Blogs/blob/master/Images/TIM%E6%88%AA%E5%9B%BE20181201181404.png?raw=true)
   * 在引用管理器窗口->浏览->dll路径
   * UnityEngine.dll默认路径：C:\Program Files\Unity\Editor\Data\Managed
   * UnityEngine.UI.dll默认路径：C:\Program Files\Unity\Editor\Data\UnityExtensions\Unity\GUISystem
-![111](https://i.imgur.com/9RcDKF2.png)
+  ![111](https://github.com/QiangZou/Blogs/blob/master/Images/TIM%E6%88%AA%E5%9B%BE20181201182437.png?raw=true)
 
 
 * 编写一个继承MonoBehaviour的简单代码
@@ -88,7 +88,7 @@ public class BuildAssetBunble
 * 创建StreamingAssets放入AssetBundle文件（下图4）
 * 点击BuildAsset/Bunble按钮（下图5）
 
-![](https://i.imgur.com/zeCz8of.png)
+![](https://github.com/QiangZou/Blogs/blob/master/Images/TIM%E6%88%AA%E5%9B%BE20181203154840.png?raw=true)
 
 ## 测试代码
 * 创建一个Text游戏对象

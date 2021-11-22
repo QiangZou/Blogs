@@ -1,4 +1,5 @@
-#Canvas 画布
+# Canvas 画布
+
 - Render Modes 渲染模式)
  - Screen Space - Overlay
    - UI将永远出现在所有摄像机的最前面
@@ -22,10 +23,12 @@
 
 
 
-#EventSystem UI的事件系统
+# EventSystem UI的事件系统
+
 - 控制UI界面总体的事件管理器，分别表示UI事件系统，输入模块系统，触摸输入系统
 
-#RectTransform 矩形
+# RectTransform 矩形
+
 - Pivot 中心轴
  - X,Y值范围是0到1的点
  - (0,0)表示左下角(1,1)表示右上角
@@ -37,8 +40,8 @@
 
 
 
+# Text 文本
 
-#Text 文本
 - Font 字体
 - Font Style 字体类型
  - Normal 正常的
@@ -61,7 +64,8 @@
 - Raycast Target 射线检测
  - True 一般按钮需要
 
-#Image 图片
+# Image 图片
+
 - Source Image 源图像
 - Color 颜色
 - Material 材质
@@ -72,7 +76,8 @@
  - Tiled 平铺
  - Filled 填充
 
-#Button 按钮
+# Button 按钮
+
 - Interactable 是否启用
 - Transition 过渡
  - None 无
@@ -93,8 +98,8 @@
  - Vertical 垂直
  - Explicit 明确
 
+# Toggle 开关
 
-#Toggle 开关
 - 拥有Button所有选项
 - Is On 开关
 - Toggle Transition 开关过度
@@ -103,13 +108,14 @@
 - Graphic 图形(选择状态)
 - Group 组(受Toggle Group组建控制)
 
-#Toggle Group 开关组
+# Toggle Group 开关组
+
 - Allow Switch Off 允许关掉
  - True 允许所有的Toggle都为Flase
  - Flase 单选模式
 
+# Slider 滑动条
 
-#Slider 滑动条
 - 拥有Button所有选项
 - Fill Rect 填充矩形
 - Handle Rect 滑杆矩形
@@ -123,7 +129,8 @@
 - Whole Number 整数(是否只接收整数)
 - Value 当前值
 
-#Scrollbar 滚动条
+# Scrollbar 滚动条
+
 - 拥有Button所有选项
 - Handle Rect
 - Direction 方向
@@ -135,8 +142,7 @@
 - Size 大小(操作条矩形对应的缩放长度)
 - Number Of Steps 阶梯数量(指定可滚动的位置数量)
 
-
-#Scroll Rect 滚动矩形
+# Scroll Rect 滚动矩形
 
 - Content 内容(要滚动的对象)
 - Horizontal 水平
@@ -157,7 +163,7 @@
 		- Auto Hide And Expand Viewpord 自动隐藏和展开视窗
 	- Spacing 间距
 
-#Layout Element 布局元素
+# Layout Element 布局元素
 
 - Ignore Layout 忽略布局
 - Minmum width 最小宽 (最先被分配 不带任何妥协) 
@@ -168,7 +174,8 @@
 - Flexible height 灵活高
 - Layout Priority 布局优先
 
-#Grid Layout Group
+# Grid Layout Group
+
 - Padding 填充
 	- Laft
 	- Right
@@ -199,12 +206,11 @@
 	- Fixed Column Count 固定列数
 	- Fixed Row Count 固定行数
 
+# Horizontal Layout 水平布局
 
-#Horizontal Layout 水平布局
 - 相对于Grid Layout Group新增以下
 - Child Force Expand 孩子能力扩展(自动调整子物体之间的距离以适应父物体的宽和高) 
 - Control Child Size 控制子集大小
-
 
 
 

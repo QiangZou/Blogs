@@ -9,7 +9,7 @@
 
  - 点击应用宝悬浮窗
 
-![](https://i.imgur.com/EgYDoY9.png)
+![](https://github.com/QiangZou/Blogs/blob/master/Images/TIM%E5%9B%BE%E7%89%8720190108200043.png?raw=true)
 
 - 如图所示 左下角有一个截图按钮
 
