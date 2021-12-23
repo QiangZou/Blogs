@@ -1,3 +1,0 @@
-# Auto detect text files and perform LF normalization
-*.DS_Store
-* text=auto
