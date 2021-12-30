@@ -2,9 +2,9 @@
 
 ## **Why**
 
-- 为了使IDE编码体验和强语言相近
-- 让IDE提前发现编码错误
-- BUG查找更方便
+- 为了使 IDE 编码体验和强语言相近
+- 让 IDE 提前发现编码错误
+- BUG 查找更方便
 - 代码阅读更方便
 
 ##  建议
@@ -74,24 +74,22 @@ end
 ---@field protected key number @基类字段
 
 ---@class Test : TestBase @测试类
----@field bool boolean @boolean类型字段
+---@field bool boolean @boolean 类型字段
 ---@field numberArray number[] @数组
 ---@field numberDictionary table<number,number> @字典
 
 ---@type Test
 local Test = {}
 
-
----@type number @number类型字段（后期扩展字段 IDE不能识别注释）
+---@type number @number 类型字段（后期扩展字段 IDE 不能识别注释）
 Test.num = 0
 
-
----方法1
+---方法 1
 function Test:Func1()
     --字段测试
     self.key = 0 --能跳转基类
     self.bool = false
-    self.num = 1 --IDE不能识别注释
+    self.num = 1 --IDE 不能识别注释
     for i, v in ipairs(self.numberArray) do end
     for k, v in pairs(self.numberDictionary) do end --遍历能识别 k v 类型
 
@@ -102,18 +100,18 @@ function Test:Func1()
     local tempFunc5 = self:Func5(false)
 end
 
----方法2 有参数
+---方法 2 有参数
 ---@param name string @名字
 function Test:Func2(name)
 end
 
----方法3 有返回值
+---方法 3 有返回值
 ---@return string @返回类型
 function Test:Func3(name)
     return name
 end
 
----方法4 多参数 多返回值
+---方法 4 多参数 多返回值
 ---@param name string @名字
 ---@param sex boolean @性别
 ---@return string , number @返回类型
@@ -121,28 +119,23 @@ function Test:Func4(name, sex)
     return name, sex
 end
 
----方法5 参数多类型 返回值多类型
+---方法 5 参数多类型 返回值多类型
 ---@param sex string | boolean @性别
 ---@return string | boolean @返回类型
 function Test:Func5(sex)
     return sex
 end
 
----方法6 参数为方法
+---方法 6 参数为方法
 ---@param func fun(key:number):string @函数
 function Test:Func6(func)
     return func(1)
 end
 
-
 --使用 see 注解来标注一个引用
 ---@see Test#Func1
 
-
-
-
 --下面的不常用
-
 
 --不定参数注解
 ---@vararg string
@@ -152,7 +145,7 @@ local function format(...)
 end
 
 --泛型
---几乎不用 C#用是因为用 object 作为参数 有装箱拆箱消耗 lua语言天然不需要
+--几乎不用 C#用是因为用 object 作为参数 有装箱拆箱消耗 lua 语言天然不需要
 
 ---@class Goods @物品基类
 ---@field public price number @价格
@@ -175,7 +168,5 @@ local jsonText = [[{
     "name":"Emmy"
 }]]
 
-
 return Test
 ```
-
